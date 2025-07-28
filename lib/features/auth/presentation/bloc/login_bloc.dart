@@ -29,7 +29,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
 
     on<LoginSubmitted>((event, emit) {
       if (formKey.currentState!.validate()) {
-        // ✅ نفذ login logic هنا
+        // 
       }
     });
   }

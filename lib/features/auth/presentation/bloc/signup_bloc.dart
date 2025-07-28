@@ -9,7 +9,7 @@ class SignupBloc extends Bloc<SignupEvent, SignupState> {
   SignupBloc() : super(SignupInitial()) {
     on<SignupSubmitted>((event, emit) async {
       emit(SignupLoading());
-      await Future.delayed(const Duration(seconds: 2)); // simulate network
+      await Future.delayed(const Duration(seconds: 2)); 
 
       if (event.email.contains('@')) {
         emit(SignupSuccess());
